@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Faça seu Pedido</h1>
+
+    <h2>Pedido via WhatsApp</h2>
+    <input type="text" id="clientName" placeholder="Nome do Cliente">
+    <input type="tel" id="clientPhone" placeholder="Telefone">
+    
+    <select id="productSize">
+        <option value="M">M - R$16,00</option>
+        <option value="G">G - R$18,00</option>
+        <option value="Quadrada">Quadrada - R$21,00</option>
+    </select>
+    <select id="paymentMethod">
+        <option value="Pix">Pix</option>
+        <option value="Dinheiro">Dinheiro</option>
+    </select>
+    
+
+    <!-- Novo campo para quantidade -->
+    <input type="number" id="productQuantity" placeholder="Quantidade" min="1" value="1">
+    
+    <button id="placeOrderButton" onclick="placeOrder()">Fazer Pedido</button>
+    
+    <div id="result"></div>
+</body>
+</html>
